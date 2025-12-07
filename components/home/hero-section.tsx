@@ -23,14 +23,14 @@ export default function HeroSection() {
               asChild
               className="text-md rounded-md bg-blue-700 px-8 py-6 text-white hover:bg-blue-800"
             >
-              <Link href="/register">Coba Demo Sekarang</Link>
+              <Link href="/auth/login">Coba Demo Sekarang</Link>
             </Button>
             <Button
               asChild
               variant={"ghost"}
               className="text-md rounded-md border border-gray-300 px-8 py-6 text-gray-600 hover:bg-blue-400/10"
             >
-              <Link href="/register">Lihat Design System</Link>
+              <Link href="/auth/register">Lihat Design System</Link>
             </Button>
           </div>
         </div>
