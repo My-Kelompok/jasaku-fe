@@ -113,7 +113,11 @@ export function CreateTransactionDialog() {
                   <FormItem>
                     <FormLabel>Jumlah</FormLabel>
                     <FormControl>
-                      <Input placeholder="Masukan jumlah" {...field} />
+                      <Input
+                        placeholder="Masukan jumlah"
+                        type="number"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

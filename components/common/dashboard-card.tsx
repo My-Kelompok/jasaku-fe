@@ -6,6 +6,8 @@ interface DashboardCardProps {
   label: string;
   value: string;
   percentage: string;
+  iconColor?: string;
+  iconBgColor?: string;
 }
 
 export default function DashboardCard({
@@ -13,13 +15,15 @@ export default function DashboardCard({
   label,
   value,
   percentage,
+  iconColor,
+  iconBgColor,
 }: DashboardCardProps) {
   return (
     <Card>
       <CardHeader>
         <div className="flex flex-row items-center justify-between">
           <Icon
-            className="rounded-md bg-green-300/50 p-2 text-green-700"
+            className={`rounded-md ${iconBgColor ? iconBgColor : "bg-green-300/50"} p-2 ${iconColor ? iconColor : "text-green-700"}`}
             size={37}
           />
           {percentage}
